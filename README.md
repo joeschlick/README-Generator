@@ -26,7 +26,7 @@ npm install
 
 ## Usage:
 
-Run the command 'node index.js to start the application. Enter reponses to the prompts. A completed README will appear in your directory.
+Run the command 'node index.js to start the application. Enter reponses to the prompts.
 
 ## License:
       
@@ -56,8 +56,6 @@ Deployed application link:
 
 ## Media:
 
-Screenshot: 
-
+Screenshot: ![Screen Shot 2020-09-01 at 10 21 53 AM](https://user-images.githubusercontent.com/66143571/91885679-09374a00-ec3d-11ea-80cf-fc71ce4a525e.png)
 Video: 
-
 GIF: 
