@@ -1,25 +1,23 @@
 // function to generate markdown for README
 function projectURL(github, title) {
-  const caseTitle = title.toLowerCase().split(" ").join("-")
-  return `https://github.com/${github}/${caseTitle}`
+  const caseTitle = title.toLowerCase().split(" ").join("-");
+  return `https://github.com/${github}/${caseTitle}`;
 }
 
 function licenseBadge(license, github, title) {
   if (license !== "none") {
-    return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](${projectURL(github, title)})`
+    return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](${projectURL(github,title)})`;
   }
-  return ""
+  return "";
 }
 
 function licenseSection(license) {
   if (license !== "none") {
-    return (
-      `## License:
+    return `## License:
       
-      This project is licensed under ${license}.`
-    )
+      This project is licensed under ${license}.`;
   }
-  return ""
+  return "";
 }
 
 function generateMarkdown(data) {
