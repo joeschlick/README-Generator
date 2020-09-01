@@ -6,31 +6,31 @@ const fs = require('fs');
 const questions = [
     {
         type: "input",
-        name: "projectTitle",
+        name: "Title",
         message: "Enter the project title?"
     },
 
     {
         type: "input",
-        name: "description",
+        name: "Description",
         message: "Enter a description of the project"
     },
 
     {
         type: "input",
-        name: "installation",
+        name: "Installation",
         message: "Enter user installation instructions"
     },
 
     {
         type: "input",
-        name: "usage",
+        name: "Usage",
         message: "Enter user instructions for the project",
     },
 
     {
         type: "list",
-        name: "license",
+        name: "License",
         message: "Select the type of license the project is covered under",
         choices: [
             "none",
@@ -68,13 +68,13 @@ const questions = [
 
     {
         type: "input",
-        name: "contributing",
+        name: "Contributing",
         message: "Enter contribution guidelines",
     },
 
     {
         type: "input",
-        name: "test",
+        name: "Tests",
         message: "Enter test instructions",
     },
 
@@ -94,14 +94,84 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     inquirer.prompt(questions).then((response) => {
+        fs.appendFileSync("README.md", ("# " + response.Title)+ '\n', function(err) { 
+            if (err) { 
+            console.log(err)
+            }
+            else {
+            console.log("Success")
+            }
+        });
 
-    })
+        fs.appendFileSync("README.md", response.Description + '\n', function(err) { 
+            if (err) { 
+            console.log(err)
+            }
+            else {
+            console.log("Success")
+            }
+        });
+        
+        fs.appendFileSync("README.md", 
+            "## Table of Contents" + '\n' 
+            + "[* Installation](##Installation)" + `\n`
+            + "[* Usage]()" + `\n`
+            + "[* License]()" + `\n`
+            + "[* Contributing]()" + `\n`
+            + "[* Tests]()" + `\n`
+            + "[* Questions]()" + `\n`, 
+            function(err) { 
+            if (err) { 
+            console.log(err)
+            }
+            else {
+            console.log("Success")
+            }
+        });
+
+        fs.appendFileSync("README.md", "## Installation:" + '\n' + response.Installation + '\n', function(err) { 
+            if (err) { 
+            console.log(err)
+            }
+            else {
+            console.log("Success")
+            }
+        });
+
+        fs.appendFileSync("README.md", ("##" + response.Usage )+ '\n', function(err) { 
+            if (err) { 
+            console.log(err)
+            }
+            else {
+            console.log("Success")
+            }
+        });
+
+        fs.appendFileSync("README.md", ("##" + response.License )+ '\n', function(err) { 
+            if (err) { 
+            console.log(err)
+            }
+            else {
+            console.log("Success")
+            }
+        });
+
+        fs.appendFileSync("README.md", ("##" + response.Contributing )+ '\n', function(err) { 
+            if (err) { 
+            console.log(err)
+            }
+            else {
+            console.log("Success")
+            }
+        });
+
+    });
 }
 //Title, Description, Table of Contents, Installation, Usage, License (list), Contributing, Tests,Questions (enter github un and it's added w/ a link to the repo)
 
 // function to initialize program
 function init() {
-
+    writeToFile()
 }
 
 // function call to initialize program
