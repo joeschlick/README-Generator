@@ -78,7 +78,9 @@ Deployed application link: ${data.deployed}
 ## Media:
 
 Screenshot: ${data.screenshot}
+
 Video: ${data.video}
+
 GIF: ${data.gif}
 `;
 }
