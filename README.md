@@ -57,5 +57,7 @@ Deployed application link:
 ## Media:
 
 Screenshot: 
+
 Video: 
+
 GIF: 

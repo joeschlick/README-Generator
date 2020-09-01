@@ -36,6 +36,8 @@ ${data.description}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+* [Links](#links)
+* [Media](#media)
 
 ## Installation:
 
@@ -65,7 +67,19 @@ ${data.tests}
 
 ## Questions:
 
-If you have any questions about the repo, open an issue or contact [${data.github}](${data.URL}) directly at ${data.email}.
+If you have any questions about the repo, open an issue or contact [${data.github}](${data.url}) directly at ${data.email}.
+
+## Links:
+
+Repository link: ${data.url}
+
+Deployed application link: ${data.deployed}
+
+## Media:
+
+Screenshot: ${data.screenshot}
+Video: ${data.video}
+GIF: ${data.gif}
 `;
 }
 

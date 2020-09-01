@@ -17,12 +17,7 @@ const questions = [
     message: "Enter a description of the project",
   },
 
-  {
-    type: "input",
-    name: "URL to Project",
-    message: "Enter the project URL",
-  },
-
+  
   {
     type: "input",
     name: "installation",
@@ -62,8 +57,38 @@ const questions = [
 
   {
     type: "input",
+    name: "url",
+    message: "Enter the project URL",
+  },
+
+  {
+    type: "input",
     name: "email",
     message: "Enter your email address",
+  },
+
+  {
+    type: "input",
+    name: "deployed",
+    message: "Enter a link to you deployed application",
+  },
+
+  {
+    type: "input",
+    name: "screenshot",
+    message: "Enter link to screenshot",
+  },
+
+  {
+    type: "input",
+    name: "video",
+    message: "Enter link to video",
+  },
+
+  {
+    type: "input",
+    name: "gif",
+    message: "Enter link to GIF",
   },
 ];
 
