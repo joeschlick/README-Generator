@@ -1,4 +1,6 @@
+//Links generateMarkdown file
 const markDown = require("./utils/generateMarkdown.js");
+//NPM requirements
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
@@ -17,7 +19,6 @@ const questions = [
     message: "Enter a description of the project",
   },
 
-  
   {
     type: "input",
     name: "installation",

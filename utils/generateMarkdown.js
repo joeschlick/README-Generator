@@ -4,13 +4,15 @@ function projectURL(github, title) {
   return `https://github.com/${github}/${caseTitle}`;
 }
 
+//Creates license badge
 function licenseBadge(license, github, title) {
   if (license !== "none") {
-    return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](${projectURL(github,title)})`;
+    return `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](${projectURL(github, title)})`;
   }
   return "";
 }
 
+//Adds license info to License section
 function licenseSection(license) {
   if (license !== "none") {
     return `## License:
@@ -20,6 +22,7 @@ function licenseSection(license) {
   return "";
 }
 
+//Creates the README content
 function generateMarkdown(data) {
   return `# ${data.title}
 ${licenseBadge(data.license, data.github, data.title)}
@@ -85,4 +88,5 @@ GIF: ${data.gif}
 `;
 }
 
+//Makes code accessible in other files
 module.exports = generateMarkdown;
