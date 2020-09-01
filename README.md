@@ -19,12 +19,12 @@ A command-line application that generates a professional README file from user i
 To install necessary dependancies, run the following command:
 
 ```
-npm install
+run the command 'node index.js to start the application. Enter reponses to the prompts. A completed README
 ```
 
 ## Usage:
 
-run the command 'node index.js to start the application. Enter reponses to the prompts. A completed READMEwill appear in your directory.
+will appear in your directory.
 
 ## License:
       
@@ -39,9 +39,23 @@ none
 To run tests run the following command:
 
 ```
-npm test
+mpm test
 ```
 
 ## Questions:
 
-If you have any questions about the repo, open an issue or contact [joeschlick](undefined) directly at schlickjoe@gmail.com.
+If you have any questions about the repo, open an issue or contact [joeschlick](https://github.com/joeschlick/README-Generator) directly at schlickjoe@gmail.com.
+
+## Screenshots / Videos / GIFs:
+
+Screenshot:
+
+none
+
+Video:
+
+none
+
+GIF:
+
+www.goole.com
